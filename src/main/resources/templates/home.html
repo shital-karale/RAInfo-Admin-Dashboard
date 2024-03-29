@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset='utf-8'>
+    
+    <title>RA admin pannel</title>
+    <meta name='viewpoint' content='width=device-width, initial-scale=1'>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+	integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+	crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   <link rel="stylesheet" th:href="@{/css/style1.css}" />
+
+    <script src='main.js'></script>
+</head>
+<body>
+    <section>
+    <div class="sidebar" id="mysidebar">
+        <p class="logo"> <span>RA</span>-Info Solution</p>
+        <a href="#" class="icon-a"><i class="fa-solid fa-dashboard"></i>&nbsp;&nbsp;Dashboard</a>
+        <a href="addpro" class="icon-a"><i class="fa-solid fa-users"></i>&nbsp;&nbsp;Projects</a>
+        <a href="#" class="icon-a"><i class="fa-solid fa-list"></i>&nbsp;&nbsp;Customer</a>
+        <a href="#" class="icon-a"><i class="fa fa-shopping-bag"></i>&nbsp;&nbsp;Order</a>
+        <a href="img" class="icon-a"><i class="fa-solid fa-tasks"></i>&nbsp;&nbsp;Gallery</a>
+        <a href="#" class="icon-a"><i class="fa-solid fa-user"></i>&nbsp;&nbsp;Accounts</a>
+        <a href="#" class="icon-a"><i class="fa-solid fa-list-alt"></i>&nbsp;&nbsp;Task</a>
+    </div>
+    </section>
+<section class="header">
+    <div class="head">
+        <div class="col-div-5">
+            <span style="font-size: 30px; cursor: pointer;color: white;" class="nav">&#9776;Dashboard</span>
+            <span style="font-size: 30px; cursor: pointer;color: rgb(14, 13, 13);" class="nav2">&#9776;Dashboard</span>
+
+        </div>
+        <div class="col-div-6">
+            <div class="profile">
+                <i class="fa-solid fa-user"></i>
+                <p>Admin</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="midhead">
+    <div class="col-div-3">
+        <div class="box">
+            <p>65<span>Customers</span></p>
+            <i class="fa-solid fa-users"></i>
+        </div>
+    </div>
+    <div class="col-div-3">
+        <div class="box">
+            <p>75<span>Projects</span></p>
+            <i class="fa-solid fa-list"></i>
+        </div>
+    </div>
+    <div class="col-div-3">
+        <div class="box">
+            <p>88<span>Order</span></p>
+            <i class="fa fa-shopping-bag"></i>
+        </div>
+    </div>
+    <div class="col-div-3">
+        <div class="box">
+            <p>92<span>Task</span></p>
+            <i class="fa-solid fa-tasks box-icon"></i>
+        </div>
+    </div>   
+</div> 
+</section>
+    <div class="clearfix"></div>
+    <br>
+    <br>
+
+    <section>
+        <div class="col-div-8">
+            <div class="box-8">
+                <div class="pro-btn">
+                    <button> View All</button>
+                </div>
+                <div class="content-box">
+                    <div class="pro-h">
+                        <h2>Recent Projects</h2>
+                    </div>
+                    <div class="clearfix"></div>
+                    <table style="width: 100%;">
+                        <tr>
+                            <th>Project</th>
+                            <th>Department</th>
+                            <th>status</th>
+                            
+                        </tr>
+                        <tr>
+                            <td>Web App Development</td>
+                            <td>DevelopmentTeam</td>
+                            <td><span class="rev-span"></span>Review</td>
+                        </tr>
+
+                        <tr>
+                            <td>UI Development</td>
+                            <td>DevelopmentTeam</td>
+                            <td><span class="pro-span"></span>InProgress</td>
+                        </tr>
+                        <tr>
+                            <td>Desk App Development</td>
+                            <td>DevelopmentTeam</td>
+                            <td><span class="pen-span"></span>Pending</td>
+
+                        </tr>
+                        <tr>
+                            <td>Web App Development</td>
+                            <td>DevelopmentTeam</td>
+                            <td><span class="rev-span"></span>Review</td>
+                        </tr>
+
+                        <tr>
+                            <td>UI Development</td>
+                            <td>DevelopmentTeam</td>
+                            <td><span class="pro-span"></span>InProgress</td>
+                        </tr>
+                        <tr>
+                            <td>Desk App Development</td>
+                            <td>DevelopmentTeam</td>
+                            <td><span class="pen-span"></span>Pending</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Web App Development</td>
+                            <td>DevelopmentTeam</td>
+                            <td><span class="rev-span"></span>Review</td>
+                        </tr>
+
+                        <tr>
+                            <td>UI Development</td>
+                            <td>DevelopmentTeam</td>
+                            <td><span class="pro-span"></span>InProgress</td>
+                        </tr>
+                        <tr>
+                            <td>Desk App Development</td>
+                            <td>DevelopmentTeam</td>
+                            <td><span class="pen-span"></span>Pending</td>
+                            
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-div-4">
+            <div class="box-4">
+                <div class="pro-btn">
+                    <button> View All</button>
+                </div>
+                <div class="content-box">
+                    <div class="pro-h">
+                        <h2>All Customers</h2>
+                    </div>
+                    <div class="clearfix"></div>
+                    <table style="width: 100%;">
+                        <tr>
+                            <th>Pic </th>
+                            <th>Name</th>
+                            <th>Contact</th>
+                        </tr>
+                        <tr>
+                            <td><i class="fa-solid fa-face-smile"></i></td>
+                            <td>Vinay</td>
+                            <td><i class="fa fa-phone"></i><i class="fa fa-envelope"></i><i class="fa fa-location-dot"></i></td>
+
+                        </tr>
+                        <tr>
+                            <td><i class="fa-solid fa-face-smile"></i></td>
+                            <td>Vinay</td>
+                            <td><i class="fa fa-phone"></i><i class="fa fa-envelope"></i><i class="fa fa-location-dot"></i></td>
+
+                        </tr>
+                        <tr>
+                            <td><i class="fa-solid fa-face-smile"></i></td>
+                            <td>Vinay</td>
+                            <td><i class="fa fa-phone"></i><i class="fa fa-envelope"></i><i class="fa fa-location-dot"></i></td>
+
+                        </tr>
+                        <tr>
+                            <td><i class="fa-solid fa-face-smile"></i></td>
+                            <td>Vinay</td>
+                            <td><i class="fa fa-phone"></i><i class="fa fa-envelope"></i><i class="fa fa-location-dot"></i></td>
+
+                        </tr>
+                        <tr>
+                            <td><i class="fa-solid fa-face-smile"></i></td>
+                            <td>Vinay</td>
+                            <td><i class="fa fa-phone"></i><i class="fa fa-envelope"></i><i class="fa fa-location-dot"></i></td>
+
+                        </tr>
+                        <tr>
+                            <td><i class="fa-solid fa-face-smile"></i></td>
+                            <td>Vinay</td>
+                            <td><i class="fa fa-phone"></i><i class="fa fa-envelope"></i><i class="fa fa-location-dot"></i></td>
+
+                        </tr>
+                    </table>
+
+                </div>
+        </div>
+        <div class="clearfix"></div>
+
+    </div>
+</div>
+</section>
+
+</body>
+</html>

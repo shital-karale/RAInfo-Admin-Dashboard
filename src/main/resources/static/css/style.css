@@ -1,0 +1,491 @@
+*{
+    margin: 0;
+    padding: 0;
+
+
+}
+
+.home{
+
+    
+    width: 100%;
+    background-size: cover;
+    background-color: antiquewhite;
+    
+    
+}
+
+.homeimg-col{
+    flex-basis: 48%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    padding-top: 100px;
+}
+.homeimg-col img{
+    width: 100%;
+    animation-name:shiv;
+   animation-duration: 5s;
+   animation-iteration-count: infinite;
+    
+}
+
+.homeimg1{
+
+    
+    width: 100%;
+    padding-top: 5%;
+    display: flex;
+    background-color:antiquewhite;
+    
+}
+
+.homeimg1-col{
+    flex-basis: 48%;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.homeimg1-col img{
+    width: 100%;
+   justify-content: left;
+
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color:black;
+    border:1px solid black ;
+    padding: 12px 34px;
+    font-size: 13px;
+    background:rgb(223, 223, 115);
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #e91414;
+    background: #e91414;
+    transition: 1s;
+
+}
+
+@media(max-width: 700px){
+    .content h1{
+        font-size: 20px;
+        
+    }
+    
+}
+
+/*-----------About-----*/
+.homeabout{
+    background-color:white;
+}
+.detials_info{
+    width: 80%;
+
+}
+.info_col{
+    width: 100%;
+    padding-left: 50px;
+}
+
+.info_col.info h{
+    font-size: 36px solid;
+}
+.info p{
+    text-align: left;
+    font-size: 14px;
+}
+
+.servicehome{
+    background-color: #f1cade;
+    background-size: cover;
+
+}
+.service-col{
+
+    flex-basis: 48%;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 150px;   
+}
+.serv{
+    width: 100%;
+    height:100vh;
+    padding-left: 30px;
+
+}
+
+
+
+ .service-col img{
+    width: 100%;
+    height: 100%;
+    animation-name: shiv1;
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
+    
+}
+
+
+
+.service-col h1{
+    padding:0%;
+   
+
+
+}
+.service-col p{
+    padding-top: 10px;
+    padding-left: 50px;
+   
+   
+}
+.detials{
+    width: 80;
+   background-color: #f1cade; ;
+    text-align: center;
+    padding-top: 100px;
+}
+
+
+
+
+.detials_col{
+
+    flex-basis: 20%;
+    margin-bottom: 5%;
+    transition: 0.5s;
+    font-size:14px;
+      
+}
+.detials_col:hover{
+    box-shadow: 0 0 20px 0 rgba(76, 6, 189, 0.2);
+}
+.detials_col h{
+    font-size: 20px;
+    text-align: left;
+    padding-bottom: 10px;
+    padding-left: 5px;
+
+}
+.detials_col p{
+    padding-top: 10px;
+    padding-left: 50px;
+    font-size: 12px;
+    text-align: left;
+
+}
+
+/*-----------career-----*/
+
+.careerhome{
+    background: #5f7a86;
+    height: 115vh;
+   
+    
+}
+
+.abc{
+    justify-content: right;
+    width: 100%;
+    display: flex;
+    text-align: left;
+    padding-top: 150px;
+    padding-right: 50px;
+   
+}
+.abc h1{
+    font-size: 100px;
+    padding-top: 150px;
+    padding-right: 200px;
+    color: black;
+    
+
+}
+.h-btn{
+    font-size: 20px;
+    position: relative;
+    cursor: pointer;
+    color: blue;
+    
+}
+.img-box{
+    
+   width: 500px;
+   height: 400px;
+  
+       
+}
+
+.img-box img{
+    width: 100%;
+    height: 100%;
+    animation-name: shiv;
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
+    
+}
+@keyframes shiv{
+    from{
+        width: 450px;
+        height: 350px;
+    }
+    to{
+        width: 500px;
+   height: 400px;
+    }
+}
+
+
+
+.career-col h1{
+
+    
+    font-size: 80px;
+    font-weight: 600;
+}
+.career-col h1:hover{
+    color: rgb(112, 40, 68);
+}
+
+/*-----------contact-----*/
+.conpage{
+    width: 100%;
+}
+.conpage-col{
+    flex-basis: 48%;
+    position: relative;
+    overflow: hidden;
+    padding-top: 200px;
+    padding-left: 40px;
+}
+.conpage-col img{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    padding-bottom: 200px;
+    animation-name: shiv;
+   animation-duration: 5s;
+   animation-iteration-count: infinite;
+    
+}
+
+.contacthome{
+    background: #cedff7;
+    
+    height: 115vh;
+   
+    
+}
+
+.abc1{
+   
+    width: 100%;
+    display: flex;
+    text-align: left;
+    padding-top: 150px;
+    
+   
+}
+
+.conpage-col input, .conpage-col textarea{
+    
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+   padding: 15px;
+   margin-bottom: 14px;
+   outline: none;
+   border: 1px solid #ccc;
+    color: black;
+    
+
+}
+.h-btn{
+    font-size: 20px;
+    position: relative;
+    cursor: pointer;
+    color: blue;
+    
+}
+.abc1.img2-box{
+    
+    justify-content: right;
+   
+   width: 70%;
+  
+   
+       
+}
+
+.img2-box img{
+    width: 100%;
+    height: 100%;
+    animation-name: shiv2;
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
+    
+}
+@keyframes shiv2{
+    from{
+        width: 450px;
+        height: 350px;
+    }
+    to{
+        width: 500px;
+   height: 400px;
+    }
+}
+
+.location{
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+}
+.location iframe{
+    
+    width: 100%;
+}
+
+.contactus{
+    
+    width: 100%;
+    margin: auto;
+}
+.contact-col{
+flex-basis: 48%;
+margin-bottom: 10px;
+padding-left: 400px;
+}
+.contact-col div{
+    display: flex;
+    
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-col div .fa{
+    font-size:28px;
+    margin: 10px;
+    color: #e91414;
+    margin-right: 30px;
+}
+
+
+ <!--Project detials-->
+   
+   .sec{
+   width:100%;
+ 
+   background-color: #c0c0c0;
+   }
+   .div-main{
+       
+  		display: flex;
+        height: 90vh;
+        justify-content: center;
+        align-items: center;
+      
+        padding: 30px;
+      
+        box-sizing: border-box;
+    }
+    main.table{
+        width: 70vw;
+        height: 90vh;
+        background-color: #9aa3d6;
+        box-shadow: 0 15px 25px #f5890e;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    .tableheader{
+        width: 100%;
+        height: 10%;
+        background-color: #d3e985;
+        padding: 8px;
+    }
+    .tablebody{
+        width: 95%;
+        height: 89%;
+        background-color: #d3e985;
+        margin: 0.8rem auto;
+        border-radius: .6rem;
+        overflow: auto;
+    }
+    .tablebody::-webkit-scrollbar{
+        width:10px;
+        height:10px;
+    }
+    .tablebody::-webkit-scrollbar-thumb{
+        border-radius: .5rem;
+       background-color: #000040;
+        visibility: hidden;
+    }
+    .tablebody:hover::-webkit-scrollbar-thumb{
+        visibility: visible;
+
+    }
+    table{
+        width: 100%;
+    }
+    table,th,td{
+        border-collapse: collapse;
+        padding: 1rem;
+    }
+    thead th{
+        position: sticky;
+        top: 0;
+        left: 0;
+        background-color: #e7eeea;
+    }
+    tbody tr:nth-child(even){
+        background-color: #eeadad;
+    }
+    
+    
+    
+ 
+ 
+   
+.img_gallery{
+	display:flex; 
+	
+	 justify-content:space-between;
+	
+}
+.img_gallery img{
+	 flex: 1 1 auto;
+	padding:10px;
+	position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+.video_gallery{
+	display:flex; 
+	
+	
+	
+}
+.video_gallery video{
+	 flex: 1 1 auto;
+	padding:10px;
+	position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+.container-img h2{
+	border-radius: 10px;
+	background: #ff8040;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset='utf-8'>
+
+<title>RA admin pannel</title>
+<meta name='viewpoint' content='width=device-width, initial-scale=1'>
+
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+	integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+	crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" th:href="@{/css/style1.css}" />
+
+<script src='main.js'></script>
+</head>
+<body>
+	<section>
+		<div class="sidebar" id="mysidebar">
+			<p class="logo">
+				<span>RA</span>-Info Solution
+			</p>
+			<a href="#" class="icon-a"><i class="fa-solid fa-dashboard"></i>&nbsp;&nbsp;Dashboard</a>
+			<a href="#" class="icon-a"><i class="fa-solid fa-users"></i>&nbsp;&nbsp;customers</a>
+			<a href="addpro" class="icon-a"><i class="fa-solid fa-list"></i>&nbsp;&nbsp;projects</a>
+			<a href="#" class="icon-a"><i class="fa fa-shopping-bag"></i>&nbsp;&nbsp;order</a>
+			<a href="#" class="icon-a"><i class="fa-solid fa-tasks"></i>&nbsp;&nbsp;Inventory</a>
+			<a href="#" class="icon-a"><i class="fa-solid fa-user"></i>&nbsp;&nbsp;Accounts</a>
+			<a href="#" class="icon-a"><i class="fa-solid fa-list-alt"></i>&nbsp;&nbsp;Task</a>
+		</div>
+	</section>
+	<section class="header">
+		<div class="head">
+			<div class="col-div-5">
+				<span style="font-size: 30px; cursor: pointer; color: white;"
+					class="nav">&#9776;Dashboard</span> <span
+					style="font-size: 30px; cursor: pointer; color: rgb(14, 13, 13);"
+					class="nav2">&#9776;Dashboard</span>
+
+			</div>
+			<div class="col-div-6">
+				<div class="profile">
+					<i class="fa-solid fa-user"></i>
+					<p>Admin</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<br>
+	<div class="main1">
+		<main class="table">
+
+			<section class="tableheader">
+				<h1>All Project List</h1>
+			</section>
+			<section class="tablebody">
+							<table>
+					<thead>
+						<tr>
+							<th>Id</th>
+							<th>Project Name</th>
+							<th>Client Name</th>
+							<th>Email Address</th>
+							<th>Contact Number</th>
+							<th>Action</th>
+
+						</tr>
+					</thead>
+					<tbody>
+						<tr th:each="e:${proj}">
+							<td th:text="${e.id}"></td>
+							<td th:text="${e.proname}"></td>
+							<td th:text="${e.proclientname}"></td>
+							<td th:text="${e.email}"></td>
+							<td th:text="${e. phoneno}"></td>
+							<td><a th:href=@{/edit/{id}(id=${e.id})}><button
+										class="btn btn-primary">Edit</button></a> <a
+								th:href=@{/delete/{id}(id=${e.id})}><button
+										class="btn btn-sm btn-danger">Delete</button></a></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+		</main>
+	</div>
+</body>
+</html>

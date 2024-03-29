@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<link rel="stylesheet" th:href="@{/css/style1.css}" />
+</head>
+<body>
+    <section>
+        <div class="sidebar" id="mysidebar">
+            <p class="logo"> <span>RA</span>-Info Solution</p>
+            <a href="#" class="icon-a"><i class="fa-solid fa-dashboard"></i>&nbsp;&nbsp;Dashboard</a>
+            <a href="#" class="icon-a"><i class="fa-solid fa-users"></i>&nbsp;&nbsp;customers</a>
+            <a href="addpro" class="icon-a"><i class="fa-solid fa-list"></i>&nbsp;&nbsp;projects</a>
+            <a href="#" class="icon-a"><i class="fa fa-shopping-bag"></i>&nbsp;&nbsp;order</a>
+            <a href="#" class="icon-a"><i class="fa-solid fa-tasks"></i>&nbsp;&nbsp;Inventory</a>
+            <a href="#" class="icon-a"><i class="fa-solid fa-user"></i>&nbsp;&nbsp;Accounts</a>
+            <a href="#" class="icon-a"><i class="fa-solid fa-list-alt"></i>&nbsp;&nbsp;Task</a>
+        </div>
+        </section>
+    <section class="header">
+        <div class="head">
+            <div class="col-div-5">
+                <span style="font-size: 30px; cursor: pointer;color: white;" class="nav">&#9776;Dashboard</span>
+                <span style="font-size: 30px; cursor: pointer;color: rgb(14, 13, 13);" class="nav2">&#9776;Dashboard</span>
+    
+            </div>
+            <div class="col-div-6">
+                <div class="profile">
+                    <i class="fa-solid fa-user"></i>
+                    <p>Admin</p>
+                </div>
+            </div>
+        </div>
+    </section>
+	<section class="proform">
+<div class="container">
+   <form action="" th:action="@{/updateproj}" method="post" th:object="${proj}" class="">
+      
+        <h2>Edit Project </h2>
+        <div class="content">
+        
+        <input type="hidden" th:value="${proj.id}" name="id" />
+            <div class="input-box">
+                <label for="projectname">Project Name</label>
+                <input name="proname" type="text" class="form-control" 
+                placeholder="Enter Project Name" required th:value="${proj.proname}" 
+                 />
+            </div>
+
+            <div class="input-box">
+                <label for="clientname">Project client Name</label>
+                <input name="proclientname" type="text" class="form-control" th:value="${proj.proclientname}"  
+                placeholder="Enter client Name" required 
+                 />
+            </div>
+
+            <div class="input-box">
+                <label for="name">Client Email Address</label>
+                <input name="email" type="email" class="form-control" th:value="${proj.email}" 
+                placeholder="Enter Email Address" required 
+                 />
+            </div>
+
+            <div class="input-box">
+                <label for="number">Client Contact number</label>
+                <input name="phoneno" type="number" class="form-control" th:value="${proj.phoneno}" 
+                placeholder="Enter Client Contact number" required 
+                 />
+            </div>
+            <div class="input-box1">
+                <button class="hero-btn">Save</button>
+            </div>
+
+        </div>
+    </form>
+</div>
+</section>
+
+</body>
+</html>
